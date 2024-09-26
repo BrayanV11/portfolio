@@ -7,6 +7,7 @@
 body {
     background-color: #343a40;
     font-family: "Merriweather";
+    color: #f8f9fa;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f8f9fa;
 }
 
 .header-links {
@@ -71,6 +71,7 @@ header {
     margin-top: 80px;
     display: flex;
     justify-content: center;
+    margin-bottom: 120px;
 }
 
 .about-area {
@@ -91,7 +92,6 @@ header {
 }
 
 .about-content p {
-    color: #f8f9fa;
     font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -118,4 +118,74 @@ header {
 .link-area img:hover {
     background-color: #0076CE;
     border-radius: 50%;
+}
+
+.main-about-me {
+    padding-top: 50px;
+    margin: auto;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-title {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 1.7rem;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #f8f9fa;
+}
+
+.about-me-content {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+}
+
+.main-about-area {
+    padding-top: 80px;
+    margin: auto;
+    width: 55%;
+    display: flex;
+}
+
+.about-container, .skills-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-about-title h2 {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.main-about-desc p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-boxes {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-skill {
+    transition: 600ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1;
+    border-radius: 30%;
 }
