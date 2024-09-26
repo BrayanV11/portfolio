@@ -71,12 +71,11 @@ header {
     margin-top: 80px;
     display: flex;
     justify-content: center;
-    font-family: "Merriweather";
 }
+
 .about-area {
     border-radius: 13px;
     padding: 20px;
-    background-color: #6c757d;
     width: 55%;
     display: flex;
     justify-content: space-between;
@@ -84,20 +83,25 @@ header {
 }
 
 .about-content {
-    margin-left: -150px;
-    color: #f8f9fa;
     padding: 25px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 45%;
-    font-size: 1.3rem;
+    width: 65%;
+}
+
+.about-content p {
+    color: #f8f9fa;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
 }
 
 .img-area img {
-    width: 200px;
+    width: 180px;
     border-radius: 50%;
-    border: 3px solid #0076CE;
+    border: 3px solid #343a40;
 }
 
 .links-area {
