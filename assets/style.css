@@ -4,9 +4,15 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "redwing";
+    src: url(/assets/fonts/Redwing-Medium.otf);
+    font-weight: normal;
+}
+
 body {
     background-color: #343a40;
-    font-family: "Merriweather";
+    font-family: "redwing";
     color: #f8f9fa;
 }
 
