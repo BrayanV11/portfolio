@@ -107,8 +107,10 @@ header {
 }
 
 .img-area img {
-    width: 180px;
-    border-radius: 50%;
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7%;
     border: 3px solid #343a40;
 }
 
@@ -338,7 +340,7 @@ footer {
     }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 700px) {
 
     .header-menu {
         height: 6vh;
