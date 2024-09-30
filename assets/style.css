@@ -19,16 +19,19 @@ body {
 header {
     height: 9vh;
     display: flex;
+    justify-content: center;
 }
 
 .header-menu {
+    display: flex;
+    justify-content: center;
     width: 55%;
     height: 100%;
     max-width: 1280px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #f8f9fa;
 }
 
 .header-links {
@@ -87,7 +90,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 615px;
 }
 
 .about-content {
@@ -99,7 +101,6 @@ header {
 }
 
 .about-content p {
-    font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.8;
     letter-spacing: 1.5px;
@@ -127,12 +128,19 @@ header {
     border-radius: 50%;
 }
 
+.section-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-about-me {
-    margin: auto;
     width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .about-me-title {
@@ -152,14 +160,13 @@ header {
 .main-about-area {
     padding-top: 80px;
     padding-bottom: 80px;
-    margin: auto;
     width: 55%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .about-container, .skills-container {
-    min-width: 360px;
+    min-width: 300px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -200,21 +207,22 @@ header {
 
 .projects-boxes {
     width: 55%;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-box {
     border-radius: 8px;
     margin: 30px;
-    min-width: 300px;
     flex: 1;
+    max-width: 350px;
     background-color: #383d41;
 }
 
 .box-content-area {
+    min-width: 220px;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -229,4 +237,159 @@ header {
 .box-content-area h3 {
     margin-top: 10px;
     margin-bottom: 7px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-footer-upper {
+    width: 55%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.heading-content {
+    width: 50%;
+}
+
+.heading-content h3 {
+    font-size: 1.2em;
+}
+
+.heading-content a {
+    font-size: 0.8em;
+}
+
+
+.img-contact {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer-lower {
+    width: 55%;
+    border-top: 2px solid #f8f9fa;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer-lower p {
+    margin-top: 10px;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+
+.main-footer-lower a, .heading-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-footer-lower a:hover, .heading-content a:hover {
+    transition: 600ms ease-in-out;
+    text-decoration: underline;
+    color: #0076CE;
+}
+
+.img-contact .link-area img {
+    margin: 10px;
+}
+
+@media (max-width: 1092px) {
+
+    html, body {
+        overflow-x: hidden !important;
+    }
+    .about-area, .projects-boxes, .main-footer-upper {
+        width: 80%;
+    }
+    .header-menu {
+        width: 100%;
+    }
+
+    .about-area {
+        width: 100%;
+    }
+
+    .main-about-area {
+        padding: 45px;
+        width: 100%;
+    }
+    .skills-container {
+        padding: 50px;
+    }
+
+    .main-footer-lower {
+        width: 100%;
+    }
+}
+
+@media (max-width: 431px) {
+
+    .header-menu {
+        height: 6vh;
+    }
+
+    .about-area {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-about-me, .about-content, .about-container {
+        text-align: center;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+
+    .links-area {
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .main-footer-upper {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heading-content {
+        width: 35%;
+    }
+
+    .img-contact {
+        width: 30%;
+    }
+
+    .img-contact .link-area img {
+        margin: 0;
+    }
 }
