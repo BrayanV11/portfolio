@@ -311,8 +311,8 @@ footer {
 
 @media (max-width: 1092px) {
 
-    body {
-        overflow-x: hidden;
+    html, body {
+        overflow-x: hidden !important;
     }
     .about-area, .projects-boxes, .main-footer-upper {
         width: 80%;
@@ -321,8 +321,13 @@ footer {
         width: 100%;
     }
 
+    .about-area {
+        width: 100%;
+    }
+
     .main-about-area {
         padding: 45px;
+        width: 100%;
     }
     .skills-container {
         padding: 50px;
@@ -330,5 +335,61 @@ footer {
 
     .main-footer-lower {
         width: 100%;
+    }
+}
+
+@media (max-width: 431px) {
+
+    .header-menu {
+        height: 6vh;
+    }
+
+    .about-area {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-about-me, .about-content, .about-container {
+        text-align: center;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+
+    .links-area {
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .main-footer-upper {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heading-content {
+        width: 35%;
+    }
+
+    .img-contact {
+        width: 30%;
+    }
+
+    .img-contact .link-area img {
+        margin: 0;
     }
 }
